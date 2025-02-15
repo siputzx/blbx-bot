@@ -1,109 +1,215 @@
-<h1 align="center">ðŸ¤– BlackboxAI to Telegram Bot</h1>
+# Blackbox.ai Telegram Bot
+
+![Blackbox.ai Telegram Bot](https://socialify.git.ci/siputzx/blbx-bot/image?description=1&descriptionEditable=Integrate%20Blackbox.ai%20API%20with%20Telegram%20Bot&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
+
 <p align="center">
-  <b>Integrasi API BlackboxAI ke Bot Telegram</b><br>
-  <i>Contributor: <a href="https://github.com/siputzx">siputzx</a> and BlackboxAI Team</i>
+  <a href="https://github.com/siputzx/blbx-bot/stargazers"><img src="https://img.shields.io/github/stars/siputzx/blbx-bot?color=yellow&style=flat-square"></a>
+  <a href="https://github.com/siputzx/blbx-bot/network/members"><img src="https://img.shields.io/github/forks/siputzx/blbx-bot?style=flat-square"></a>
+  <a href="https://github.com/siputzx/blbx-bot/watchers"><img src="https://img.shields.io/github/watchers/siputzx/blbx-bot?style=flat-square"></a>
+  <a href="https://github.com/siputzx/blbx-bot/issues"><img src="https://img.shields.io/github/issues/siputzx/blbx-bot?style=flat-square"></a>
+  <a href="https://github.com/siputzx/blbx-bot/graphs/contributors"><img src="https://img.shields.io/github/contributors/siputzx/blbx-bot?style=flat-square"></a>
 </p>
 
 <p align="center">
-  <img src="https://visitor-badge.glitch.me/badge?page_id=siputzx.blackboxai-telegram" alt="Visitors">
-  <img src="https://img.shields.io/github/stars/siputzx/blackboxai-telegram?style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/siputzx/blackboxai-telegram?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
 </p>
 
----
+## 📊 Repository Stats
 
-## âœ¨ Fitur
-- ðŸ”¥ **Integrasi langsung dengan API BlackboxAI**  
-- âš¡ **Respon cepat dan ringan menggunakan Telegraf**  
-- ðŸ”„ **Dapat berjalan di berbagai platform**  
-- ðŸ” **Keamanan terjamin dengan penggunaan API Key**  
-- ðŸ›  **Mudah diinstal dan dikonfigurasi**  
+![Repo Visitors](https://visitor-badge.laobi.icu/badge?page_id=siputzx.blbx-bot)
+![Last Commit](https://img.shields.io/github/last-commit/siputzx/blbx-bot)
+![Repo Size](https://img.shields.io/github/repo-size/siputzx/blbx-bot)
 
----
+## 🌟 Features
 
-## ðŸš€ Instalasi
+- Seamless integration of Blackbox.ai API with Telegram
+- Quick responses to user queries
+- Support for code generation and assistance
+- Easy deployment on multiple platforms
+- Minimal resource requirements
+- Modern and elegant interface
 
-### 1ï¸âƒ£ **Persyaratan Awal**
-Sebelum menjalankan bot, pastikan kamu sudah menginstal **Node.js** versi terbaru:  
-ðŸ”— [Download Node.js](https://nodejs.org/)
+## 📋 Prerequisites
 
-### 2ï¸âƒ£ **Clone Repository**
+Before setting up the bot, ensure you have:
+
+- [Node.js](https://nodejs.org/) (v14 or newer)
+- Blackbox.ai API key
+- Telegram Bot Token (from [@BotFather](https://t.me/BotFather))
+
+## 🚀 Installation and Setup
+
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/siputzx/blbx-bot.git
 cd blbx-bot
 ```
 
-### 3ï¸âƒ£ **Install Dependency**
+### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
-### 4ï¸âƒ£ **Konfigurasi Bot**
-Buat file `.env` dan isi dengan:
+### 3. Configure environment variables
+
+Create a `.env` file in the root directory with the following content:
+
 ```
-TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-BLACKBOXAI_API_KEY=your_blackboxai_api_key
+BOT_TOKEN=your_telegram_bot_token
+BLACKBOX_API_KEY=your_blackbox_api_key
 ```
 
-### 5ï¸âƒ£ **Menjalankan Bot**
+### 4. Start the bot
+
 ```bash
-node index.js
+npm start
 ```
 
----
+## 🖥️ Deployment Guidelines
 
-## ðŸ›  Cara Deploy di Berbagai Platform
+### Termux (Android)
 
-### ðŸ”¹ **Termux (Android)**
+1. Install Termux from F-Droid
+2. Run the following commands:
+
 ```bash
 pkg update && pkg upgrade
 pkg install nodejs git
 git clone https://github.com/siputzx/blbx-bot.git
 cd blbx-bot
 npm install
-node index.js
+# Create .env file with required values
+npm start
 ```
 
-### ðŸ”¹ **Replit**
-1. Fork repo ini ke akun GitHub kamu  
-2. Buat project baru di Replit dan pilih `Import from GitHub`  
-3. Masuk ke **Secrets** â†’ Tambahkan `TELEGRAM_BOT_TOKEN` dan `BLACKBOXAI_API_KEY`  
-4. Jalankan dengan `node index.js`
+### Replit
 
-### ðŸ”¹ **Heroku**
+1. Create a new Replit project
+2. Import from GitHub: `https://github.com/siputzx/blbx-bot.git`
+3. Add secrets in Replit for `BOT_TOKEN` and `BLACKBOX_API_KEY`
+4. Click Run button
+
+### Heroku
+
+1. Create a Heroku account and install Heroku CLI
+2. Clone the repository locally
+3. Initialize Heroku app:
+
 ```bash
-heroku create
+heroku login
+heroku create your-app-name
 git push heroku main
-heroku config:set TELEGRAM_BOT_TOKEN=your_token
-heroku config:set BLACKBOXAI_API_KEY=your_key
-heroku ps:scale web=1
-heroku open
+heroku config:set BOT_TOKEN=your_telegram_bot_token
+heroku config:set BLACKBOX_API_KEY=your_blackbox_api_key
 ```
 
-### ðŸ”¹ **Pterodactyl Panel**
-1. Tambahkan **Egg Node.js** pada server  
-2. Upload project ini ke **File Manager**  
-3. Tambahkan environment variable di panel  
-4. Jalankan server  
+### Pterodactyl Panel
 
-### ðŸ”¹ **VPS / Koyeb / RDP**
+1. Create a new Node.js server in your panel
+2. Set startup command to `npm start`
+3. Upload the repository files
+4. Add environment variables in the Startup tab
+5. Start the server
+
+### VPS (Ubuntu/Debian)
+
+1. Connect to your VPS via SSH
+2. Install Node.js and npm:
+
 ```bash
+sudo apt update
+sudo apt install nodejs npm
 git clone https://github.com/siputzx/blbx-bot.git
 cd blbx-bot
 npm install
-node index.js
+# Create .env file with required values
+npm start
 ```
 
----
+### Koyeb
 
-## ðŸŒŸ Dukungan dan Kontribusi  
-Jika kamu ingin berkontribusi, silakan **fork repository ini** dan buat **pull request**.  
-Jangan lupa beri â­ di repo ini jika bermanfaat!
+1. Sign up for a Koyeb account
+2. Connect your GitHub account
+3. Create a new app from the GitHub repository
+4. Add environment variables:
+   - `BOT_TOKEN`
+   - `BLACKBOX_API_KEY`
+5. Deploy the application
 
-ðŸ“Œ **Tim BlackboxAI** dan **Contributor siputzx** siap membantu jika ada kendala.  
+### cPanel (Not Recommended)
+
+1. Access your cPanel account
+2. Set up Node.js app in the Software section
+3. Upload the repository files via File Manager
+4. Configure environment variables
+5. Start the application
+
+Note: cPanel is not ideal for long-running Node.js applications.
+
+### RDP (Windows)
+
+1. Connect to your RDP
+2. Install Node.js for Windows
+3. Clone the repository
+4. Open PowerShell and navigate to the project directory
+5. Run the following commands:
+
+```powershell
+npm install
+# Create .env file with required values
+npm start
+```
+
+## 📝 Usage
+
+Once the bot is running, users can interact with it on Telegram:
+
+1. Start a chat with your bot
+2. Use `/start` to get started
+3. Send queries to get responses from Blackbox.ai
+
+## ⚙️ Configuration
+
+You can customize the bot behavior by modifying the following files:
+
+- `config.js`: General bot configuration
+- `handlers/`: Custom message handlers
+- `middlewares/`: Custom middlewares
+
+## 👨‍💻 Contributors
+
+<a href="https://github.com/siputzx/blbx-bot/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=siputzx/blbx-bot" />
+</a>
+
+Special thanks to siputzx and the BlackBox.ai team!
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- [Blackbox.ai](https://www.blackbox.ai) for providing the API
+- [Telegraf](https://github.com/telegraf/telegraf) for the Telegram Bot framework
+- All contributors who have helped with the project
 
 ---
 
 <p align="center">
-  <b>ðŸš€ Made with â¤ï¸ by siputzx and BlackboxAI Team</b>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%">
 </p>
